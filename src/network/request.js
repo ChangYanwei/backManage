@@ -6,6 +6,13 @@ export function request(config) {
     timeout: 5000
   });
 
+  // 拦截请求。请求在到达服务器之前会首先调用这个函数对请求做一些预处理
+  instance.interceptors.request.use(config => {
+    // 为请求头对象，添加Token验证的Authorization字段
+    config.headers.Authorization = sessionStorage.getItem('token');
+    return config;
+  })
+
   return instance(config);
 }
 

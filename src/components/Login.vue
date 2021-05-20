@@ -58,7 +58,6 @@
           if (!valid) return;
           loginRequest(this.loginForm).then(res => {
             let result = res.data;
-            console.log(result);
             if (result.meta.status !== 200) {
               this.$message({
                 message: '登录失败',
