@@ -1,3 +1,5 @@
+// 用户管理中的网络请求
+
 import {request} from "./request";
 
 // 获取用户列表
@@ -49,5 +51,16 @@ export function removeUserByIdRequest(id) {
   return request({
     url: `/users/${id}`,
     method: 'delete'
+  })
+}
+
+// 分配用户角色
+export function allotNewRoleRequest(userId, roleId) {
+  return request({
+    url: `users/${userId}/role`,
+    method: 'put',
+    data: {
+      rid: roleId
+    }
   })
 }

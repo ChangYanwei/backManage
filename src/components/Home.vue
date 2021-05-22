@@ -75,6 +75,7 @@
       getMenuList() {
         getMenuListRequest().then(res => {
           let result = res.data;
+          console.log('左侧菜单：',result.data);
           if (result.meta.status !== 200) {
             this.$message({
               message: result.meta.message,

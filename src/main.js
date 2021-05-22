@@ -8,6 +8,12 @@ import './assets/fonts/iconfont.css'
 
 
 Vue.config.productionTip = false
+Vue.prototype.alertMessage = function(message, type) {
+  this.$message({
+    message,
+    type
+  });
+};
 
 new Vue({
   router,

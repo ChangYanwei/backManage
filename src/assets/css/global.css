@@ -1,4 +1,4 @@
-html,body,#app {
+html, body, #app {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -10,9 +10,10 @@ html,body,#app {
 }
 
 .el-card {
-  box-shadow: 0 1px 1px rgba(0,0,0,0.15) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
 }
 
-.el-pagination {
+.el-pagination,
+.el-table{
   margin-top: 15px;
 }
