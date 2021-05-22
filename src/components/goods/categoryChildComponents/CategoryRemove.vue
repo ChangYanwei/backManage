@@ -1,27 +1,26 @@
 <template>
-  <el-button type="danger" icon="el-icon-delete" size="mini" @click="removeRoleById(roleId)">删除</el-button>
+  <el-button type="danger" size="mini" icon="el-icon-delete" @click="removeCategory(id)">删除</el-button>
 </template>
 
 <script>
-  import {removeRoleByIdRequest} from 'network/rights'
+  import {removeCategoryByIdRequest} from 'network/goods';
 
   export default {
-    name: "RoleRemove",
+    name: "CategoryRemove",
     props: {
-      roleId: {
+      id: {
         type: Number,
-        required: true
+        default: 0
       }
     },
     methods: {
-      // 根据ID删除用户
-      removeRoleById(id) {
-        this.$confirm('此操作将删除该角色, 是否继续?', '提示', {
+      removeCategory(id) {
+        this.$confirm('此操作将删除该分类, 是否继续?', '提示', {
           confirmButtonText: '确定',
           cancelButtonText: '取消',
           type: 'warning'
         }).then(() => {
-          removeRoleByIdRequest(id).then(res => {
+          removeCategoryByIdRequest(id).then(res => {
             let result = res.data;
 
             if (result.meta.status !== 200) {
@@ -30,10 +29,10 @@
 
             this.alertMessage('删除成功', 'success');
 
-            this.$emit('role-list');
+            this.$emit('category-list');
           });
         }).catch(() => {
-          this.alertMessage('已取消删除','info');
+          this.alertMessage('已取消删除', 'info');
         });
       }
     }

@@ -11,6 +11,7 @@
 
     <!--主体-->
     <el-container>
+      <!-- 左侧菜单 -->
       <el-aside :width="isCollapse ? '64px' : '200px'">
         <div class="toggle-button" @click="toggleCollapse">|||</div>
         <el-menu
@@ -75,7 +76,6 @@
       getMenuList() {
         getMenuListRequest().then(res => {
           let result = res.data;
-          console.log('左侧菜单：',result.data);
           if (result.meta.status !== 200) {
             this.$message({
               message: result.meta.message,

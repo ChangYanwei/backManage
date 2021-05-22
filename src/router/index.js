@@ -7,8 +7,9 @@ let Welcome = () => import('../components/Welcome');
 let Users = () => import('../components/user/Users');
 let Rights = () => import('../components/rights/Rights');
 let Roles = () => import('../components/rights/Roles');
+let Category = () => import('../components/goods/Category');
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -39,6 +40,10 @@ const routes = [
       {
         path: '/roles',
         component: Roles
+      },
+      {
+        path: '/categories',
+        component: Category
       }
     ]
   }
