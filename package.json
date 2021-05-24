@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "echarts": "^5.1.1",
     "element-ui": "^2.15.1",
     "vue": "^2.6.11",
     "vue-quill-editor": "^3.0.6",
