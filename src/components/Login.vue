@@ -69,8 +69,10 @@
               message: '恭喜，登录成功',
               type: 'success'
             });
-            sessionStorage.setItem('token',result.data.token);
+            sessionStorage.setItem('token', result.data.token);
             this.$router.push('/home');
+          }).catch(err => {
+            console.log('登录失败：', err);
           })
         })
       }

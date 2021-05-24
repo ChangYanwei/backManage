@@ -45,3 +45,5 @@ axios.interceptors.request.use(config => {
    return config;
 })
 ```
+## 2.4 富文本编辑器
+适用于 Vue 的富文本编辑器：[Vue-Quill-Editor](https://github.com/surmon-china/vue-quill-editor)

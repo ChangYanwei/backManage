@@ -51,7 +51,7 @@ export function removeCategoryByIdRequest(id) {
 // 获取参数列表
 export function getCategoryParamsRequest(id, sel) {
   return request({
-    url: `categories/${id}/attributes`,
+    url: `/categories/${id}/attributes`,
     params: {
       sel
     }
@@ -61,7 +61,7 @@ export function getCategoryParamsRequest(id, sel) {
 // 添加动态参数或者静态属性
 export function addParamRequest(params) {
   return request({
-    url: `categories/${params.id}/attributes`,
+    url: `/categories/${params.id}/attributes`,
     method: 'post',
     data: {
       attr_name: params.attr_name,
@@ -73,7 +73,7 @@ export function addParamRequest(params) {
 // 根据 ID 查询参数
 export function getParamByIdRequest(data) {
   return request({
-    url: `categories/${data.id}/attributes/${data.attrId}`,
+    url: `/categories/${data.id}/attributes/${data.attrId}`,
     params: {
       attr_sel: data.attr_sel
     }
@@ -83,7 +83,7 @@ export function getParamByIdRequest(data) {
 // 根据 ID 修改参数
 export function editParamByIdRequest(data) {
   return request({
-    url: `categories/${data.id}/attributes/${data.attrId}`,
+    url: `/categories/${data.id}/attributes/${data.attrId}`,
     method: 'put',
     data: {
       attr_name: data.attr_name,
@@ -95,7 +95,34 @@ export function editParamByIdRequest(data) {
 // 根据 ID 删除参数
 export function removeParamByIdRequest(data) {
   return request({
-    url: `categories/${data.id}/attributes/${data.attrId}`,
+    url: `/categories/${data.id}/attributes/${data.attrId}`,
     method: 'delete'
   })
 }
+
+// 商品管理--------------------------------------
+// 获取商品列表数据
+export function getGoodsListRequest(params) {
+  return request({
+    url: '/goods',
+    params
+  })
+}
+
+// 根据 ID 删除商品
+export function removeGoodsByIdRequest(id) {
+  return request({
+    url: `/goods/${id}`,
+    method: 'delete'
+  })
+}
+
+// 添加商品
+export function addGoodsRequest(data) {
+  return request({
+    url: `/goods`,
+    method: 'post',
+    data
+  })
+}
+

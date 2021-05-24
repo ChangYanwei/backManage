@@ -3,10 +3,17 @@
 ## 1.1. API V1 接口说明
 
 - 接口基准地址：`https://www.liulongbin.top:8888/api/private/v1/`
+
+  > `http://127.0.0.1:8888/api/private/v1/`
+
 - 服务端已开启 CORS 跨域支持
+
 - API V1 认证统一使用 Token 认证
+
 - **需要授权的 API ，必须在请求头中使用 `Authorization` 字段提供 `token` 令牌**
+
 - 使用 HTTP Status Code 标识状态
+
 - 数据返回格式统一使用 JSON
 
 ### 1.1.1. 支持的请求方法
