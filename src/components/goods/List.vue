@@ -82,7 +82,6 @@
       getGoodsList() {
         getGoodsListRequest(this.queryInfo).then(res => {
           let result = res.data;
-          console.log('商品列表：', result);
           if (result.meta.status !== 200) {
             return this.alertMessage('获取商品数据失败', 'error');
           }

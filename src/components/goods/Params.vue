@@ -108,7 +108,6 @@
       getCategoriesList() {
         getCategoriesListRequest(this.queryInfo).then(res => {
           let result = res.data;
-          console.log('商品分类：', result);
           if (result.meta.status !== 200) {
             return this.alertMessage('商品列表获取失败', 'error');
           }

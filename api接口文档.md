@@ -3,17 +3,14 @@
 ## 1.1. API V1 接口说明
 
 - 接口基准地址：`https://www.liulongbin.top:8888/api/private/v1/`
-
-  > `http://127.0.0.1:8888/api/private/v1/`
-
+- 可以将后端代码下载到本地运行
+  - [后端API接口源码下载](https://gitee.com/wBekvam/vueShop-api-server)
+  - 怎么将后端项目跑起来，查看[学习资料](https://www.bilibili.com/video/BV1EE411B7SU?p=8)
+  - 跑起来后就可以使用：`http://127.0.0.1:8888/api/private/v1/`
 - 服务端已开启 CORS 跨域支持
-
 - API V1 认证统一使用 Token 认证
-
 - **需要授权的 API ，必须在请求头中使用 `Authorization` 字段提供 `token` 令牌**
-
 - 使用 HTTP Status Code 标识状态
-
 - 数据返回格式统一使用 JSON
 
 ### 1.1.1. 支持的请求方法

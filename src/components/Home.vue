@@ -3,8 +3,7 @@
     <!--头部-->
     <el-header>
       <div class="header-logo">
-        <img src="~assets/logo.png" alt="">
-        <span>电商后台管理系统</span>
+        <img src="../assets/logo.png">
       </div>
       <el-button type="info" @click="loginOut">退出</el-button>
     </el-header>
@@ -23,6 +22,10 @@
                 :collapse-transition="false"
                 :router="true"
                 :default-active="activePath">
+          <el-menu-item index="/welcome">
+            <i class="el-icon-s-custom"></i>
+            <span slot="title">首页</span>
+          </el-menu-item>
           <!--一级菜单-->
           <el-submenu :index="menu.id + ''" v-for="(menu,menuIndex) in menuList" :key="menu.id">
             <!--一级菜单的模板区域-->
@@ -119,9 +122,7 @@
   }
 
   .header-logo img {
-    width: 50px;
     height: 50px;
-    margin-right: 5px;
   }
 
   /* 左侧菜单 */
