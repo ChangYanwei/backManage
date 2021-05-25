@@ -6,13 +6,13 @@
 
 # 1. 功能
 
-![](E:\图片\typora图片\mall_desc01.png)
+![](./preview/mall_desc01.png)
 
 ### 开发模式
 
 > 电商后台管理系统整体采用前后端分离的开发模式,其中前端项目是基于Vue技术栈的SPA项目
 
-![](E:\图片\typora图片\mall_desc02.png)
+![](./preview/mall_desc02.png)
 
 ### 技术选型
 
@@ -39,7 +39,7 @@
 
 通过权限管理模块控制不同的用户可以进行哪些操作，具体可以通过角色的方式进行控制，即每个用户分配一个特定的角色，角色包括不同的功能权限。
 
-![](E:\图片\typora图片\mall_desc05.png)
+![](./preview/mall_desc04.png)
 
 #### 角色列表
 
@@ -76,7 +76,7 @@
 ## 登录功能
 ### 保存token
 
-![](E:\图片\typora图片\mall_desc04.png)
+![](./preview/mall_desc03.png)
 
 将登录成功之后的 token，保存到客户端的sessionStorage中。sessionStorage保存的数据用于浏览器的一次会话（session），当会话结束（通常是窗口关闭），数据会被清空
 ### 路由导航守卫控制访问权限
