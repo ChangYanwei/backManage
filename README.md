@@ -24,7 +24,7 @@
 - [API接口文档](./api接口文档.md)
 - 后端API接口源码  [下载](https://gitee.com/wBekvam/vueShop-api-server.git)
 
-> 此项目中使用的是api地址是：`https://www.liulongbin.top:8888/api/private/v1/`
+> 此项目中使用的是api地址是：`http://timemeetyou.com:8889/api/private/v1/`
 >
 > 可以将后端源码下载下来跑通后使用本地的后端服务，此时需要修改`src/network/request.js`文件中的请求地址，也需要修改`src/components/goods/listChildComponents/ListAdd.vue`中上传图片的请求地址。
 
