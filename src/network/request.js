@@ -5,7 +5,7 @@ import 'nprogress/nprogress.css';
 
 export function request(config) {
   let instance = axios.create({
-    baseURL: 'http://timemeetyou.com:8889/api/private/v1/',
+    baseURL: 'https://lianghj.top:8888/api/private/v1/',
     // baseURL: 'http://127.0.0.1:8888/api/private/v1',
     timeout: 5000
   });
