@@ -24,7 +24,7 @@
 - [API接口文档](./api接口文档.md)
 - 后端API接口源码  [下载](https://gitee.com/wBekvam/vueShop-api-server.git)
 
-> 此项目中使用的是api地址是：`http://timemeetyou.com:8889/api/private/v1/`
+> 此项目中使用的是api地址是：`https://lianghj.top:8888/api/private/v1/`
 >
 > 可以将后端源码下载下来跑通后使用本地的后端服务，此时需要修改`src/network/request.js`文件中的请求地址，也需要修改`src/components/goods/listChildComponents/ListAdd.vue`中上传图片的请求地址。
 
@@ -126,7 +126,7 @@ axios.interceptors.request.use(config => {
 ## 其它
 - 适用于 Vue 的富文本编辑器：[Vue-Quill-Editor](https://github.com/surmon-china/vue-quill-editor)
 - 进度条使用第三方库：[nprogress](https://github.com/rstacruz/nprogress) 在axios拦截请求时展示进度条，拦截响应时隐藏进度条
-- 学习资料：https://www.bilibili.com/video/BV1EE411B7SU
+- 学习资料：https://www.bilibili.com/video/BV1x64y1S7S7
 
 # 3. 项目预览
 
